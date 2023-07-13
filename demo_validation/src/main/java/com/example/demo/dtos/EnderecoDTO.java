@@ -1,24 +1,15 @@
 package com.example.demo.dtos;
 
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public class EnderecoDTO {
-    @NotBlank private String logradouro;
-    @NotBlank private String cep;
+    @NotNull private Long id;
 
-    public String getLogradouro() {
-        return logradouro;
+    public Long getId() {
+        return id;
     }
 
-    public void setLogradouro(String logradouro) {
-        this.logradouro = logradouro;
-    }
-
-    public String getCep() {
-        return cep;
-    }
-
-    public void setCep(String cep) {
-        this.cep = cep;
+    public void setId(Long id) {
+        this.id = id;
     }
 }

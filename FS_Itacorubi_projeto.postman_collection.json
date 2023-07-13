@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "c05a7f8d-78e3-4b4b-ad36-3ef09e87fbfd",
+		"name": "FS_Itacorubi_projeto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Cadastra Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"asdasda\",\r\n    \"cpf\":\"12345678901\",\r\n    \"rg\":\"asdsad\",\r\n    \"senha\":\"12345678\",\r\n    \"email\":\"asd@asd\",\r\n    \"dataNascimento\":\"25/02/1991\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/usuarios",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busca Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/usuarios?nome=asdas&rg=adasd&cpf=asdsa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios"
+							],
+							"query": [
+								{
+									"key": "nome",
+									"value": "asdas"
+								},
+								{
+									"key": "rg",
+									"value": "adasd"
+								},
+								{
+									"key": "cpf",
+									"value": "asdsa"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Cadastra Paciente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"Ciclano\",\r\n    \"cpf\":\"45645645678\",\r\n    \"rg\":\"789\",\r\n    \"endereco\":{\r\n        \"id\":7\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/pacientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualiza Paciente",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Endereco",
+			"item": [
+				{
+					"name": "Cadastra Endereco",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cep\":\"5645645\",\r\n    \"logradouro\":\"rua dhf45645645dghgfh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/enderecos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"enderecos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
