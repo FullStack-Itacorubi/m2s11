@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\":\"asdasda\",\r\n    \"cpf\":\"12345678901\",\r\n    \"rg\":\"asdsad\",\r\n    \"senha\":\"12345678\",\r\n    \"email\":\"asd@asd\",\r\n    \"dataNascimento\":\"25/02/1991\"\r\n}",
+							"raw": "{\r\n    \"nome\":\"asdasda\",\r\n    \"cpf\":\"11111111111\",\r\n    \"rg\":\"asdsad\",\r\n    \"email\":\"asd@adas\",\r\n    \"senha\":\"tadasdas\",\r\n    \"dataNascimento\":\"25/02/1991\",\r\n    \"especializacao\":\"ANESTESIOLOGIA\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
