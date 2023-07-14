@@ -6,6 +6,7 @@ public class UsuarioResponseDTO {
     private String cpf;
     private String rg;
     private String email;
+    private String especializacao;
 
     public long getId() {
         return id;
@@ -45,5 +46,13 @@ public class UsuarioResponseDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getEspecializacao() {
+        return especializacao;
+    }
+
+    public void setEspecializacao(String especializacao) {
+        this.especializacao = especializacao;
     }
 }

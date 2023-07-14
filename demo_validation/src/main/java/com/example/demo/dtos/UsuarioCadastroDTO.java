@@ -1,8 +1,10 @@
 package com.example.demo.dtos;
 
+import com.example.demo.enums.EspecializacaoClinica;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
@@ -18,7 +20,8 @@ public class UsuarioCadastroDTO {
     private String senha;
     @NotBlank @Email
     private String email;
-
+    @NotNull
+    private EspecializacaoClinica especializacao;
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
 
@@ -60,5 +63,21 @@ public class UsuarioCadastroDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public EspecializacaoClinica getEspecializacao() {
+        return especializacao;
+    }
+
+    public void setEspecializacao(EspecializacaoClinica especializacao) {
+        this.especializacao = especializacao;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 }
